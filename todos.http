@@ -1,0 +1,58 @@
+GET http://localhost:3000/todos/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpamF5MjAyMSIsImlhdCI6MTY5Mjk1OTk2MX0.uEwdFu0jH2hEZx3NbuJpD2BKSOQhdpmo7NCyxkG1114
+ 
+
+###
+
+GET http://localhost:3000/todos/1/
+
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+    "id": 4,
+    "title": " Learn CSS ",
+    "description":"CSS (Cascading Style Sheets) is a styling language used to control the presentation and layout of web pages."
+}
+
+###
+
+PUT http://localhost:3000/todos/1/
+Content-Type: application/json
+
+
+{    
+    "title":" Learn ReactJS"
+
+}
+
+###
+
+
+DELETE http://localhost:3000/todos/3
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{    
+    "id":1,
+    "username": "vijay2021",
+    "password": "123456",
+    "email":"vijaypasuladi2@gmail.com"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{   "username": "vijay2021",
+    "password": "123456"
+}
+
+### 
+GET http://localhost:3000/profile/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpamF5MjAyMSIsImlhdCI6MTY5Mjk1OTk2MX0.uEwdFu0jH2hEZx3NbuJpD2BKSOQhdpmo7NCyxkG1114
